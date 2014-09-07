@@ -20,13 +20,12 @@
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="js/ie-emulation-modes-warning.js"></script>
 
-    <script type="text/javascript">
-function performSearch() {
+<script type="text/javascript">
+    function performSearch() {
     var searchTerm = encodeURIComponent(document.getElementById('searchField').value);
-    window.open('http://www.google.com/search?q=' + searchTerm, '_blank');
-    window.open('http://search.yahoo.com/search?p=' + searchTerm, '_blank');
+    window.open('http://www.google.com/search?q=' + searchTerm, 'new_window_1');
+    window.open('http://search.yahoo.com/search?p=' + searchTerm, 'new_window_2');
     // open more tabs here ...
-}
 </script>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -59,11 +58,10 @@ function performSearch() {
  -->
       <div class="jumbotron">
 
-
     <div class="input-group input-group-lg">
-      <input type="text" class="form-control" placeholder="Type your keyword(s) here">
+      <input id="searchField" type="text" class="form-control" placeholder="Type your keyword(s) here">
       <span class="input-group-btn">
-        <button class="btn btn-default" type="button">Search!</button>
+        <button class="btn btn-default" type="button" value="click me" onclick="performSearch();">Search!</button>
       </span>
     </div><!-- /input-group -->
 
