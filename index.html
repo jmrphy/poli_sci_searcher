@@ -37,50 +37,51 @@ function performSearch() {
   </head>
 
   <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
     <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">Political Science Article Searcher</h3>
-      </div>
-
+      <br><br><br><br><br><br>
+      <!-- <div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title">Political Science Article Searcher</h3>
+  </div>
+  <div class="panel-body">
+    Search multiple political science journals in one shot. If you ask your professor for help finding articles on a subject which is not their expertise, this is most likely all they really do. Might as well do it yourself!
+  </div>
+</div>
+ -->
       <div class="jumbotron">
-   <form onsubmit="performSearch(); return false;">
-<input id="searchField" type="text" />
-<input type="submit" value="Search!" />
-</form>
+
+
+    <div class="input-group input-group-lg">
+      <input type="text" class="form-control" placeholder="Type your keyword(s) here">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button">Search!</button>
+      </span>
+    </div><!-- /input-group -->
+
       </div>
+<center>
+          <a href="https://twitter.com/share" class="twitter-share-button" data-text="Search multiple political science sources with one click." data-via="jmrphy" data-size="small" data-hashtags="research" data-dnt="true">Tweet</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></span>
 
-      <div class="row marketing">
-        <div class="col-lg-6">
-          <h4>Subheading</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+          <div class="fb-like" data-href="http://jmrphy.net/poli_sci_searcher" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+</center>
 
-          <h4>Subheading</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
 
-          <h4>Subheading</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-        </div>
 
-        <div class="col-lg-6">
-          <h4>Subheading</h4>
-          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
 
-          <h4>Subheading</h4>
-          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
-
-          <h4>Subheading</h4>
-          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-        </div>
-      </div>
 
       <div class="footer">
-        <p>&copy; Company 2014</p>
+      <center>
+        <p><a href="http://jmrphy.net">jmrphy.net</a></p>
+      </center>
       </div>
 
     </div> <!-- /container -->
