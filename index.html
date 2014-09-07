@@ -23,11 +23,14 @@
 <script type="text/javascript">
 function performSearch() {
     var searchTerm = encodeURIComponent(document.getElementById('searchField').value);
-    window.open('http://www.google.com/search?q=' + searchTerm, 'new_window_1');
-    window.open('http://search.yahoo.com/search?p=' + searchTerm, 'new_window_2');
+    window.open('http://www.jstor.org/action/doAdvancedResults?jc.InternationalSecurity=j100553&f3=all&jc.PoliticalAnalysis=j50001073&jc.ForeignPolicy=j100163&c6=AND&q1=&jc.AmericanJournalofPoliticalScience=j100487&q0=' + searchTerm + '&jc.WorldPolitics=j100410&isbn=&f5=all&ed=&f0=all&q3=&f4=all&jc.BritishJournalofPoliticalScience=j100108&jc.PublicChoice=j50000024&q4=&jc.TheJournalofConflictResolution=j100213&c1=AND&f6=all&f1=all&ar=on&jc.PoliticalScienceQuarterly=j100327&jc.PoliticalBehavior=j100572&c5=AND&c3=AND&q2=&jc.PerspectivesonPolitics=j100986&jc.ComparativePolitics=j100131&q6=&c2=AND&q5=&c4=AND&wc=on&acc=off&jc.InternationalPoliticalScienceReview%2FRevueinternationaledesciencepolitique=j100577&f2=all&jc.ForeignAffairs=j50000070&jc.TheJournalofPolitics=j100248&jc.InternationalStudiesQuarterly=j100193&la=&jc.Polity=j100328&jc.PoliticalPsychology=j100556&jc.PoliticalTheory=j100478&jc.JournalfortheStudyofRadicalism=&jc.PoliticalResearchQuarterly=j100886&jc.ThePublicOpinionQuarterly=j100334&sd=&pt=&jc.ReviewofInternationalStudies=j50000149&jc.JournalofPeaceResearch=j100245&jc.TheAmericanPoliticalScienceReview=j100077&jc.PS%3APoliticalScienceandPolitics=j100858&jc.InternationalOrganization=j100191&vf=all', 'new_window_1');
+    window.open('http://muse.jhu.edu/search/advanced#type=ajax&startYear=&stopYear=&terms=content:' + searchTerm + ':AND&m=1&limits=doctype:article&limits=format:journal&limits=discipline_id:181&items_per_page=25', 'new_window_2');
+    window.open('http://www.annualreviews.org/action/doSearch?pageSize=20&AllField=' + searchTerm + '&type=thisJournal&publication=1462', 'new_window_3');
     // open more tabs here ...
 }
 </script>
+
+$('.collapse').collapse()
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -66,17 +69,124 @@ function performSearch() {
       </div>
 <center>
 
-  <table cellpadding="10">
+  <table>
     <tr>
       <td>
-          <a href="https://twitter.com/share" class="twitter-share-button" data-text="Search multiple political science sources with one click." data-via="jmrphy" data-size="large" data-hashtags="research" data-dnt="true">Tweet</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></span>
+          <a href="https://twitter.com/share" class="twitter-share-button" data-text="Search multiple political science sources with one click." data-via="jmrphy" data-size="small" data-hashtags="research" data-dnt="true">Tweet</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></span>
     </td>
     <td>
     <div class="fb-like" data-href="http://jmrphy.net/poli_sci_searcher" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
     </td>
   </tr>
 <table>
+
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+          Collapsible Group Item #1
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in">
+      <div class="panel-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+          Collapsible Group Item #2
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse">
+      <div class="panel-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+          Collapsible Group Item #3
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse">
+      <div class="panel-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+</div>
+
           
+<!-- International Security (JSTOR & Project Muse)
+Political Analysis (JSTOR)
+American Journal of Political Science (JSTOR)
+Foreign Policy (JSTOR)
+World Politics (JSTOR & Project Muse)
+British Journal of Political Science (JSTOR)
+Public Choice (JSTOR)
+The Journal of Conflict Resolution (JSTOR)
+Political Science Quarterly (JSTOR)
+Political Behavior (JSTOR)
+Perspectives on Politics (JSTOR)
+Foreign Affairs (JSTOR)
+The Journal of Politics (JSTOR)
+International Studies Quarterly (JSTOR)
+International Political Science Review (JSTOR)
+Polity (JSTOR)
+Journal for the Study of Radicalism (JSTOR & Project Muse)
+Political Research Quarterly (JSTOR)
+Public Opinion Quarterly (JSTOR)
+Political Psychology (JSTOR)
+Political Theory (JSTOR)
+Revue Internationale De Science Politique (JSTOR)
+Political Science and Politics (JSTOR)
+International Organization (JSTOR & Project Muse)
+
+Journal of Democracy (Project Muse)
+Human Rights Quarterly (Project Muse)
+Theory & Event (Project Muse)
+SAIS Review of International Affairs (Project Muse)
+Rhetoric & Public Affairs (Project Muse)
+The Washington Quarterly (Project Muse)
+Mediterranean Quarterly (Project Muse)
+Dissent (Project Muse)
+The Middle East Journal (Project Muse)
+Global Environmental Politics (Project Muse)
+
+Contemporary Southeast Asia: A Journal of International and Strategic Affairs (Project Muse)
+The Good Society (Project Muse)
+Holocaust and Genocide Studies (Project Muse)
+The Harvard International Journal of Press/Politics (Project Muse)
+Social Research: An International Quarterly (Project Muse)
+The Future of Children (Project Muse)
+Asia Policy (Project Muse)
+Canadian Public Policy (Project Muse)
+Tikkun (Project Muse)
+Genocide Studies International (Project Muse)
+Journal for the Study of Radicalism (Project Muse)
+Humanity: An International Journal of Human Rights, Humanitarianism, and Development (Project Muse)
+New Labor Forum (Project Muse)
+World Policy Journal (Project Muse)
+Cultural Politics (Project Muse)
+Labor Studies Journal (Project Muse)
+Innovations: Technology, Governance, Globalization (Project Muse)
+African Conflict & Peacebuilding Review (Project Muse)
+Soundings: A journal of politics and culture (Project Muse)
+new formations: a journal of culture/theory/politics (Project Muse)
+Utopian Studies (Project Muse)
+AUDEM: The International Journal of Higher Education and Democracy (Project Muse)
+The Tocqueville Review/La revue Tocqueville (Project Muse)
+Philosophy & Public Affairs (Project Muse) -->
+
 </center>
 
 <br>
